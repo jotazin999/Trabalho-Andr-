@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurante da Dona Antônia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #0cb63f;
+            color: #3a22a1;
+            background-image: url('https://s2-g1.glbimg.com/zn7ESmd68WOSnfYNjwP3ACJjS7E=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/h/g/3ntCQFSOWtwwXkyzo0gw/nc-fogao-lenha-2702225.jpg'); /* Substitua pelo URL da imagem desejada */
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #0fff37;
+            color: rgb(32, 32, 34);
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .hero {
+            background: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        #menu {
+            padding: 30px 20px;
+            background-color: #ecf0f1;
+            text-align: center;
+        }
+
+        #menu h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 10px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .menu-item span {
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        #contact {
+            padding: 30px 20px;
+            text-align: center;
+            background-image: url('https://img.freepik.com/vetores-premium/cabras-pastando-no-cenario-do-sertao-xilogravura-e-literatura-de-cordel_666452-211.jpg?w=900'); /* Substitua pelo URL da imagem desejada */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(245, 33, 33, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form button {
+            background-color: #333;
+            color: rgb(121, 117, 117);
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #f39c12;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Restaurante da Dona Antônia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Bem-vindo ao Restaurante da Dona Antônia</h2>
+        <p>O sabor da comida brasileira.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Nosso Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="https://www.receitas-sem-fronteiras.com/media/86139_highlight-24_crop.jpg/rh/feijoada.jpg" alt="Feijoada BRUTA">
+                <h3>Feijoada BRUTA</h3>
+                <p>Tradicional linguiça, legumes e porco</p>
+                <span>R$ 15,50</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.anad.org.br/wp-content/uploads/2015/07/ARROZ-AO-SABOR-DE-ALHO1.jpg" alt="Arroz Branco">
+                <h3>Arroz branco</h3>
+                <p>Alho frito, óleo e sal.</p>
+                <span>R$ 11,90</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2026890941/display_1500/stock-photo-bistek-tagalog-filipino-beef-steak-is-made-of-thinly-sliced-sirloin-braised-in-a-mixture-of-2026890941.jpg" alt="Bifão Guloso">
+                <h3>Bifão Guloso</h3>
+                <p>Bife acebolado temperado no sazon.</p>
+                <span>R$ 10,90</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <form action="contato@restaurantesaborearte.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    
+</body>
+
+</html>
